@@ -1,0 +1,54 @@
+.NewsLetter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    background: linear-gradient(180deg , #dfdfdf , #f3fff622 60%);
+}
+
+.NewsLetter h1{
+    margin: 20px;
+    color: #454545;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.NewsLetter p{
+    text-align: center;
+    color: #454545;
+    font-size: 20px;
+}
+
+.Email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.Email button{
+    margin-left: -48px;
+    background-color: black;
+    border: 0;
+    color: white;
+    width: 200px;
+    height: 65px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.Email input{
+    width: 500px;
+    height: 60px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid black;
+    color: #616161;
+    background-color:white;
+    font-size: 20px;
+}
+
+.Email button:hover{
+   transform: scale(1.1);
+}

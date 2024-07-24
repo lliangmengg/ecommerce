@@ -1,0 +1,100 @@
+.signup{
+    width: 100%;
+    height: 80%;
+    background: rgb(244, 243, 243);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.signup-container{
+    width: 580px;
+    height: max-content;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 20px;
+}
+
+.signup-container h1{
+    margin: 20px 0px;
+}
+
+.signup-field{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+
+.signup-field input{
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.signup-container button{
+    width: 580px;
+    height: 72px;
+    border-radius: 50px;
+    color: white;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.signup-to-login{
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.signup-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.signup-to-login{
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.signup-to-login a:hover {
+            transform: scale(1.1);
+            display: inline-block; /*to transform inline element*/
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -20px;
+    font-weight: 700;
+  }
+  
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+.shake {
+    animation: shake 0.5s;
+    border: 1px solid red;
+  }
+  
