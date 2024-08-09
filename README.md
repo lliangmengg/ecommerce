@@ -2,7 +2,7 @@
 
 ## Introduction
 
-UNCLO is a demo e-commerce platform developed to showcase the integration of MongoDB, Express.js, React.js, and Node.js. The project aims to provide a hands-on learning experience in full-stack development. While it includes key functionalities such as user authentication, product management, and cart operations, it is still a work in progress with some features missing.
+UNCLO is a demo e-commerce platform developed to showcase the integration of MongoDB, Express.js, React.js, and Node.js. The project aims to provide a hands-on learning experience in full-stack development.
 
 ## Key Features
 
@@ -11,7 +11,6 @@ UNCLO is a demo e-commerce platform developed to showcase the integration of Mon
 - **Frontend Development:**
   - **Dynamic React Components:** Features interactive and reusable UI components.
   - **React Context API:** Used for managing global state across components.
-  - **Real-Time Updates:** Implemented where applicable, though not fully integrated in the demo.
 
 - **Backend Development:**
   - **RESTful APIs:** Created with Express.js for handling user authentication, product management (CRUD operations), and cart management.
@@ -23,6 +22,10 @@ UNCLO is a demo e-commerce platform developed to showcase the integration of Mon
   - **Image Upload Handling:** Utilizes multer for handling image uploads.
 
 
+## Limitations
+
+- **Incomplete Features:** Some functionalities are still under development or not fully integrated.
+- **Demo Purpose:** The project serves primarily as a learning tool and may not be fully functional or production-ready.
 
 
 
