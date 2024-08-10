@@ -28,7 +28,7 @@ function ShopContextProvider (props){
 
         if(localStorage.getItem('auth-token')){
             try{
-                fetch('http://localhost:4000/getcartdata',{
+                fetch('http://localhost:4000/cart/getcartdata',{
                     method: 'POST',
                     headers:{
                         Accept:'application/json',
@@ -53,7 +53,7 @@ function ShopContextProvider (props){
             
         if(localStorage.getItem('auth-token')){
             try{
-                fetch('http://localhost:4000/addtocart',{
+                fetch('http://localhost:4000/cart/addtocart',{
                     method: 'POST',
                     headers:{
                         Accept:'application/json',
@@ -84,7 +84,7 @@ function ShopContextProvider (props){
         })
         if(localStorage.getItem('auth-token')){
             try{
-                fetch('http://localhost:4000/removefromcart',{
+                fetch('http://localhost:4000/cart/removefromcart',{
                     method: 'POST',
                     headers:{
                         Accept:'application/json',

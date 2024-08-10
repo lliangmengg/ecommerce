@@ -6,11 +6,10 @@
     background-size: cover; 
     background-repeat: no-repeat; 
     display: flex;
-    flex-direction: row-reverse;
 }
 
 .offer-text{
-    padding: 50px 100px;
+    padding: 50px 20px;
     color: #fffefeca;
 
 }
@@ -32,15 +31,6 @@
   font-size: 30px;
   font-weight: lighter;
   color:rgba(143, 143, 143, 0.85);
-  animation: resize 1s 3;
-}
-@keyframes resize {
-    0%, 100% {
-        transform: scale(1); 
-    }
-    50% {
-        transform: scale(1.5); 
-    }
 }
 
 .offer button:hover{

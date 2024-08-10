@@ -8,7 +8,7 @@ function Footer  () {
     <div className='footer'>
         <div className='footer-logo'>
             <img src = {logo} alt = ""></img>
-            <p>U.N.Q.L.O.</p>
+            <p>U.N.C.L.O.</p>
         </div>
 
         <div className='footer-link'>

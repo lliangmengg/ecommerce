@@ -24,7 +24,7 @@ function Navbar(){
         <div className = "logo">
             <Link to = '/' onClick={()=>setMenu("Home")}>
                 <img src ={logo} alt = "logo" ></img>
-                <h1>U.N.Q.L.O.</h1>
+                <h1>U.N.C.L.O.</h1>
             </Link>
         </div>
 

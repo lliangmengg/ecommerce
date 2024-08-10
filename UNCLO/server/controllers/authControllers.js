@@ -22,29 +22,33 @@ export const loginUser = async (req, res) => {
     }
 };
 
-export const signupUser = async (req, res) => {
-    let check = await User.findOne({ email: req.body.email });
-    if (check) {
-        return res.status(400).json({ success: false, error: "Email already exists" });
+export const signupUser = async (req ,res)=>{
+    let check = await User.findOne({email:req.body.email});
+    if(check){
+        return res.status(400).json({success:false , error:"An account with this email already exists. Please try another email"});
+    }
+    let cart = {};
+    for(let i = 0 ; i<300 ; i++){
+        cart [i] = 0;
     }
 
-    const hash = await bcrypt.hash(req.body.password, 10);
-    const cart = {};
 
-    const new_user = new User({
+    const hash  = await bcrypt.hash(req.body.password, 10)
+
+    const  new_user = new User({
         username: req.body.name,
-        email: req.body.email,
+        email:req.body.email,
         password: hash,
         cart: cart,
-    });
+    }) 
 
     await new_user.save();
     const data = {
-        user: {
-            id: new_user.id
+        user:{
+            id:new_user.id
         }
-    };
-
-    const token = jwt.sign(data, process.env.JWT_SECRET);
-    res.json({ success: true, token });
-};
+    }
+   
+    const token = jwt.sign(data , 'secret_ecom');
+    res.json({success: true , token})
+}

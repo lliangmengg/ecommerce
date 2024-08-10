@@ -15,7 +15,8 @@ function ShopCategory(props) {
   const productCount = productsInCategory.length;
 
   // Show more products function
-  function showMoreProducts() {
+  function showMoreProducts(e) {
+    // Update the item count to show more products
     setItemCount(prevCount => Math.min(prevCount + 8, productCount));
   }
 

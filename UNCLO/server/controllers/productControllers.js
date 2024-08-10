@@ -61,13 +61,36 @@ export const allproducts = async(req , res) =>{
 
 
 //get new collections, 8 items
-export const newCollection =  async (req ,res)=>{
-    let products = await Product.find({});
-    
-    let new_collection = products.slice(0).slice(-8);
-    res.send(new_collection);
-    
-}
+export const newCollection = async (req, res) => {
+    try {
+        // Get 3 latest products from Men's collection
+        const menCollection = await Product.find({ category: 'men' })
+            .sort({ createdAt: -1 })
+            .limit(3);
+
+        // Get 3 latest products from Women's collection
+        const womenCollection = await Product.find({ category: 'women' })
+            .sort({ createdAt: -1 })
+            .limit(3);
+
+        // Get 2 latest products from Kids' collection
+        const kidsCollection = await Product.find({ category: 'kid' })
+            .sort({ createdAt: -1 })
+            .limit(2);
+
+        // Combine all collections
+        const new_collection = [
+            ...womenCollection,
+            ...menCollection,
+            ...kidsCollection
+        ];
+
+        res.send(new_collection);
+    } catch (error) {
+        res.status(500).send({ message: 'Error retrieving new collections', error });
+    }
+};
+
 
 
 //popular items in women

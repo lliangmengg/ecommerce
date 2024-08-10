@@ -55,10 +55,10 @@ async function add_product(){
       if(data.success){
         alert("Product Added");
         setProductDetails({
-          "name": "Berghaus Panel T-Shirt Set Children",
-          "category":"kid",
-          "old_price": "100",
-          "new_price": "60",
+          "name": "Women's Shirt Blouse Floral Print Button",
+          "category":"women",
+          "old_price": "160",
+          "new_price": "130",
           "image": "",
         })
         setImage(false);

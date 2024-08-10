@@ -31,16 +31,6 @@
   font-size: 30px;
   font-weight: lighter;
   color:rgba(143, 143, 143, 0.85);
-  animation: resize 1s 3;
-}
-
-@keyframes resize {
-    0%, 100% {
-        transform: scale(1); 
-    }
-    50% {
-        transform: scale(1.5); 
-    }
 }
 
 

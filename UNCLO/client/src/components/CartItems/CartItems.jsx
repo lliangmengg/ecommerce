@@ -1,11 +1,9 @@
 import { useState , useContext } from 'react';
 import './CartItems.css'
 import { ShopContext } from '../../context/ShopContext';
-// import PaymentForm from '../PaymentForm/PaymentForm.jsx';
 
 function CartItems(){
     const {all_products , cartItems , removeFromCart} = useContext(ShopContext);
-    // const [showPaymentForm, setShowPaymentForm] = useState(false);
     let Subtotal = 0;
 
     return (
