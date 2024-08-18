@@ -170,7 +170,6 @@ UNCLO is a demo e-commerce platform developed to showcase the integration of Mon
   - ![React](https://img.icons8.com/color/48/000000/react-native.png) React
   - ![HTML](https://img.icons8.com/color/48/000000/html-5.png) HTML
   - ![CSS](https://img.icons8.com/color/48/000000/css3.png) CSS
-  - ![JSX](https://img.icons8.com/color/48/000000/jsx.png) JSX
 
 - **Backend Development:**
   - ![Node.js](https://img.icons8.com/color/48/000000/nodejs.png) Node.js
@@ -179,7 +178,7 @@ UNCLO is a demo e-commerce platform developed to showcase the integration of Mon
 
 - **Database:**
   - ![MongoDB](https://img.icons8.com/color/48/000000/mongodb.png) MongoDB
-  - ![Mongoose](https://img.icons8.com/ios-filled/50/000000/monospace.png) Mongoose
+  - ! Mongoose
 
   
 
